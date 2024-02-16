@@ -37,7 +37,6 @@ func (api *API) TestPut(writer http.ResponseWriter, req *http.Request) {
 
 	client := &http.Client{}
 
-	
 	r, err := http.NewRequest(http.MethodPut, url, bytes.NewBuffer(body))
 	if err != nil {
 		fmt.Println(err)
