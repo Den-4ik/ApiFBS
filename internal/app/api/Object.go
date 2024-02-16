@@ -45,7 +45,7 @@ func (api *API) GetCategory(writer http.ResponseWriter, req *http.Request) {
 	writer.WriteHeader(response.StatusCode)
 	writer.Write(responseData)
 }
-func (api *API) rrr(writer http.ResponseWriter, req *http.Request) {
+func (api *API) GetOject(writer http.ResponseWriter, req *http.Request) {
 	initHeaders(writer)
 
 	url := "https://suppliers-api.wildberries.ru/content/v2/object/all"

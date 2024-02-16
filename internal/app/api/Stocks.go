@@ -12,7 +12,7 @@ import (
 	"github.com/gorilla/mux"
 )
 
-func (api *API) TestPut(writer http.ResponseWriter, req *http.Request) {
+func (api *API) UpdateStocksbyid(writer http.ResponseWriter, req *http.Request) {
 	initHeaders(writer)
 
 	id, err := strconv.Atoi(mux.Vars(req)["id"])
